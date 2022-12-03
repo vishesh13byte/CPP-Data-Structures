@@ -1,0 +1,64 @@
+#include <bits/stdc++.h>   
+#include <ext/pb_ds/tree_policy.hpp>
+#include <ext/pb_ds/assoc_container.hpp>
+using namespace __gnu_pbds;   
+using namespace std;  
+typedef long long int ll;
+typedef vector<int> vi;
+typedef pair<int,int> pi;
+#define fori(i,a,b) for(int i = a; i <= b; i++)
+#define ford(i,a,b) for(int i = a; i >= b; i--)
+#define ln "\n"   
+#define pb push_back                 
+#define mp make_pair                                   
+#define ff first                                          
+#define ss second                                             
+#define pll pair<ll,ll> 
+#define all(x) x.begin(),x.end()     
+#define vl vector<ll>           
+#define vvl vector<vector<ll>>    
+#define vvvl vector<vector<vector<ll>>>          
+#ifndef ONLINE_JUDGE    
+#define debug(x) cerr<<#x<<" "; _print(x); cerr<<ln;
+#else
+#define debug(x);  
+#endif       
+void _print(ll x){cerr<<x;}  
+void _print(char x){cerr<<x;}   
+void _print(string x){cerr<<x;}    
+mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());   
+template<class T,class V> void _print(pair<T,V> p) {cerr<<"{"; _print(p.first);cerr<<","; _print(p.second);cerr<<"}";}
+template<class T>void _print(vector<T> v) {cerr<<" [ "; for (T i:v){_print(i);cerr<<" ";}cerr<<"]";}
+template<class T>void _print(set<T> v) {cerr<<" [ "; for (T i:v){_print(i); cerr<<" ";}cerr<<"]";}
+template<class T>void _print(multiset<T> v) {cerr<< " [ "; for (T i:v){_print(i);cerr<<" ";}cerr<<"]";}
+template<class T,class V>void _print(map<T, V> v) {cerr<<" [ "; for(auto i:v) {_print(i);cerr<<" ";} cerr<<"]";} 
+typedef tree<ll, null_type, less<ll>, rb_tree_tag, tree_order_statistics_node_update> ordered_set;
+typedef tree<ll, null_type, less_equal<ll>, rb_tree_tag, tree_order_statistics_node_update> ordered_multiset;
+typedef tree<pair<ll,ll>, null_type, less<pair<ll,ll>>, rb_tree_tag, tree_order_statistics_node_update> ordered_pset;
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+       
+void solve(){       
+    ll n,x,y,z,k,m,i;
+	  string s; 
+	  cin >> n >> m >> k >> x >> s;
+	  vi arr(n);
+	  fori(i,0,n-1);
+	  cout << k << endl;
+    return;                                
+}      
+
+int main()                                                                                           
+{      
+    ios_base::sync_with_stdio(false);                         
+    cin.tie(NULL);  
+    #ifndef ONLINE_JUDGE                   
+    freopen("input.txt", "r", stdin);                                              
+    freopen("output.txt", "w", stdout);  
+    freopen("error.txt", "w", stderr);                        
+    #endif                          
+    ll test_cases=1;               
+    cin>>test_cases;
+    while(test_cases--){
+        solve();
+    } 
+}  
